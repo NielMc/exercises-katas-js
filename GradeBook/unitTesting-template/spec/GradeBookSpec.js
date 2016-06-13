@@ -28,5 +28,16 @@ it("should return A when passed 90, 95, 100 as parameter", function() {
     var result = gradeBook(90, 95, 100);
     expect(result).toEqual("A");
   });
+
+it("should return a string", function (){
+  var result = gradeBook(85,86,87);
+  var typeResult = typeof(result);
+  expect (typeResult).toEqual("string")
 });
-  
+
+it("should return a string of 1 char", function (){
+  var result = gradeBook(85,86,87);
+  var lengthResult = result.length;
+  expect (lengthResult).toEqual(1)
+});
+});
